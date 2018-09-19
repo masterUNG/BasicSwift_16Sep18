@@ -25,3 +25,22 @@ numberInts.append(55)
 numberInts
 numberInts.sort()
 numberInts
+
+//Print
+print("This is Print on Console")
+nameStrings
+nameStrings[1]
+print("nameString[1] = \(nameStrings[1])")
+
+//Dictionary
+var heroDic = ["key1":"Superman", "key2":"Badman", "key3":"Doramon"]
+heroDic.count
+
+//Add Member
+heroDic["key4"] = "Nopita"
+heroDic
+
+//Remove Member
+heroDic.removeValue(forKey: "key2")
+heroDic
+
