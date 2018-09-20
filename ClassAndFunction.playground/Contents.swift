@@ -11,6 +11,16 @@ class MyClass {
         print("Current of nameString ==> \(nameString)")
     }
     
+    func myFuncVoidArgumentType(newNameString: String) -> Void {
+        nameString = newNameString
+        myFuncVoidType()
+    }
+    
+    func myFuncReturn(newNameString: String) -> String {
+        let resultString: String = "Mr." + newNameString
+        return resultString
+    }
+    
     
     
 }   // MyClass
@@ -31,7 +41,11 @@ print("Last Name ==> \(myClass.nameString)")
 
 myClass.myFuncVoidType()
 
-//myClass.numberInt = 500
+myClass.myFuncVoidArgumentType(newNameString: "Nopita")
+
+let ungString: String = myClass.myFuncReturn(newNameString: "Ung")
+myClass.myFuncVoidArgumentType(newNameString: ungString)
+
 
 
 
